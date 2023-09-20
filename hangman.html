@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hangman</title>
+		<link rel="shortcut icon" type="image/png" href="IMAGES/icon.png">
+		<link rel="stylesheet" href="MainStyle.css">
+		
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Croissant One">
+		<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+		<script src="hangmanFunc.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="wrapper">				
+				<div class="container">
+					<h1>HANGMAN</h1>
+					<button class="instructions" onClick='info()'>i</button> 
+					<div class="description" id="description">
+						<strong>How to play:</strong>
+						<br/><br/>
+						Click the letters to spell out the word corresponding to the given category.
+						<br/><br/><span>_______________________________</span><br/><br/>
+						Made by Riellette Magalso | 4 - BSCS
+					  </div>
+					<button id="hint">?</button>
+					<button id="reset">↻</button>
+				 </div>	
+				 <br>
+			</div>			
+
+			<div class="wrapper">
+				<canvas id="stickman"></canvas>
+			</div>
+
+			<div class="wrapper">
+				<p id="catagoryName"></p>
+			</div>
+			
+			<div class="wrapper">
+				<div id="hold">
+				</div>
+			</div>
+
+			 <div class="wrapper">
+				 <p id="mylives"></p>
+				 <p id="clue"></p>  
+			 </div>
+
+			 <div class="wrapper">
+				<div id="buttons">
+				</div>
+		   </div>
+		 </div>
+	</body>
+</html>

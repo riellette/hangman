@@ -1,0 +1,172 @@
+body {
+  background: #2B2828;
+  font-family: "Playfair Display", "Helvetica Neue Light", "nunito",Arial, sans-serif; 
+  color:white;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2B2828; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #7b3933; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ee8484; 
+}
+
+.wrappper{
+  width:100%;
+  margin:0 auto;
+}
+
+
+canvas{
+  color:white;
+  border: white dashed 2px;
+  padding:15px;
+}
+
+h1, h2, h3 {
+	font-family: 'Croissant One', sans-serif;
+	font-weight: 100;
+   margin:5px 0;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+p{
+  font-size: 0.9em;
+}
+
+#alphabet {
+  content: "";
+      display: table;
+      clear: both;
+
+  margin:15px auto;
+  padding:0;
+  max-width:900px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:5px;
+  padding-bottom:3px;
+  background:#ee8484;
+  color:#2B2828;
+  cursor:pointer;
+  border: solid 1px #ee8484;
+  border-radius: 3px;
+}
+
+#alphabet li:hover {
+  background:#2B2828;
+  color:white;
+}
+
+#my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+
+.active {
+  opacity:0.4;
+  filter:alpha(opacity=40); 
+  cursor:default;
+}
+
+
+#mylives{
+  font-size:1.3em;
+  text-align:center;
+  display:block;
+}
+
+button{
+  background:#7b3933;
+  color:white;
+  border: solid 1px #7b3933;
+  border-radius: 50%;
+  text-decoration:none;
+  cursor:pointer;
+  font-size:0.5em;
+  padding:5px 2px;
+  width:20px;
+  margin: 2px;
+  outline: none;
+}
+
+div.description {
+  height: 130px;
+  width: 250px;
+  top: 500px;
+  color: #333;
+  font-family: nunito;
+  transform: translate(-50%, -50%) scale(0);
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 0px;
+  z-index: 1000;
+  box-shadow: 0px 0px 5px rgba(253, 184, 184, 0.945);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 15px;
+  transition: 0.3s all;
+}
+
+.description.show {
+  visibility: visible;
+  opacity: 1;
+  font-size: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s all;
+}
+
+
+
+@media (max-width: 767px) {
+  #alphabet {
+  padding:0 0 0 15px;
+}
+  }
+
+  @media (max-width: 480px) {
+  #alphabet {
+  padding:0 0 0 25px;
+}
+  }
